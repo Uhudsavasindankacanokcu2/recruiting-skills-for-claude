@@ -44,3 +44,9 @@ Hiring is legally sensitive. These skills evaluate on **job-related evidence onl
 ⭐ **Star this repo** if it saved you a hiring headache. New free skills added regularly.
 
 *Made for the Claude Skills ecosystem.*
+
+## 🔗 More Claude Skill Packs
+
+- 💸 [Finance Skills](https://github.com/Uhudsavasindankacanokcu2/finance-skills-for-claude) — cash flow, runway, invoices, budgets, pricing
+- ⚖️ [Legal Skills](https://github.com/Uhudsavasindankacanokcu2/legal-skills-for-claude) — contract review, drafting, negotiation
+- 🛒 [E-commerce Seller Skills](https://github.com/Uhudsavasindankacanokcu2/ecommerce-skills-for-claude) — listings, reviews, ad spend
