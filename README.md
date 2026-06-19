@@ -25,6 +25,53 @@ Each skill is a single `SKILL.md` — drop it in `~/.claude/skills/` and Claude 
 
 ---
 
+
+---
+
+## 👀 See it in action
+
+**You paste a resume + the role**, and ask Claude to screen it:
+
+```
+Role: Senior Backend Engineer (must-haves: 5+ yrs backend, Go or Java,
+distributed systems, SQL; nice-to-have: Kubernetes, fintech)
+
+Resume: Alex M. — 6 yrs backend. Built payment processing at a fintech
+startup (Go, PostgreSQL, gRPC microservices on AWS). Led migration to
+event-driven architecture handling 10k req/s. No Kubernetes mentioned.
+```
+
+**Claude returns** (resume-screener skill, bias-suppressed):
+
+---
+
+**Fit score: 8.5/10 — Advance.** Strong evidence on every must-have; one nice-to-have unverified.
+
+| Requirement | Met? | Evidence (quoted) |
+|-------------|------|-------------------|
+| 5+ yrs backend | ✅ Met | "6 yrs backend" |
+| Go or Java | ✅ Met | "Go, PostgreSQL, gRPC" |
+| Distributed systems | ✅ Met | "event-driven architecture handling 10k req/s", "gRPC microservices" |
+| SQL | ✅ Met | "PostgreSQL" |
+| Kubernetes (nice) | ⚠️ Not shown | Not mentioned — **ask**, don't assume absent |
+| Fintech (nice) | ✅ Met | "payment processing at a fintech startup" |
+
+**Strengths:** Direct payments/fintech experience, real scale (10k req/s), led an architecture migration (seniority signal), exact tech-stack match.
+
+**Gaps → screening questions (not assumptions):**
+- "Have you worked with Kubernetes or another orchestration platform? At what depth?"
+- "Walk me through the 10k req/s migration — what broke, what you'd do differently."
+
+**Verdict:** Advance to technical interview. Must-haves fully evidenced; the only gap (K8s) is a nice-to-have and a question, not a disqualifier.
+
+*Evaluated on skills and evidence only — name, age, gender, and school were ignored. Final hiring decisions and EEO compliance rest with your team.*
+
+---
+
+> The skill **quoted evidence** for every rating, turned the gap into a question instead of a rejection, and ignored everything not job-related.
+
+---
+
 ## 💎 Pro pack — 6 skills
 
 **[Recruiting Skills Pro →](GUMROAD_LINK_HERE)** adds:
